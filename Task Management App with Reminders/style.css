@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.error {
+    display: none;
+    color: red;
+    font-size: 12px;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.filters button {
+    flex: 1;
+    margin: 0 5px;
+    background: #ecf0f1;
+    color: #333;
+}
+
+.filters button.active {
+    background: #3498db;
+    color: white;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+}
+
+li {
+    background: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #3498db;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: none;
+    opacity: 0.6;
+    border-left-color: #2ecc71;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-date {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Buttons inside task */
+.actions button{
+    margin-left: 5px;
+    background: #e74c3c;
+}
+
+.actions button.complete {
+    background: #2ecc71;
+}
+
+/* Summary */
+.summary {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
