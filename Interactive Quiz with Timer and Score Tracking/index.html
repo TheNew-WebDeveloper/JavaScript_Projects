@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+
+        <!-- Header -->
+        <div class="quiz-header">
+            <h1>Quiz App</h1>
+            <div class="quiz-info">
+                <span id="timer">Time: 30s</span>
+                <span id="score">Score: 0</span>
+            </div>
+        </div>
+
+        <!-- Question -->
+        <div class="question-box">
+            <h2 id="question">Question text goes here</h2>
+        </div>
+
+        <!-- Options -->
+        <div class="options">
+            <button class="option">Option A</button>
+            <button class="option">Option B</button>
+            <button class="option">Option C</button>
+            <button class="option">Option D</button>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="next-btn">Next Question</button>
+        </div>
+
+    </div>
+
+    <div class="quiz-result">
+        <h2>Quiz Completed 🎉</h2>
+        <p>Your Score:</p>
+        <div class="score"><span id="marks">0</span> / 100</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
