@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff7f50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+header #search {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+/* Layout */
+main {
+  padding: 15px;
+  display: grid;
+  gap: 15px;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+button {
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* Add Recipe */
+.add-recipe input,
+.add-recipe textarea {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+#add-btn {
+  background: #27ae60;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background: white;
+  color: #27ae60;
+}
+
+/* Cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.card {
+  background: #fafafa;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.card h3,
+.card p,
+.card ol {
+  padding-bottom: 10px;
+}
+
+.card ol {
+  padding-left: 20px;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Favorite button */
+.fav-btn {
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fav-btn:hover {
+  background: white;
+  color: blue;
+}
+
+.edit-btn {
+  background-color: #27ae60;
+}
+
+.edit-btn:hover {
+  color: #27ae60;
+}
+
+.del-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
+
+.del-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+.dis-btn {
+  display: none;
+}
+
+/* Favorites section */
+.favorites {
+  border-left: 5px solid gold;
+}
+
+/* Button group */
+.btns {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  main {
+    padding: 10px;
+  }
+}
