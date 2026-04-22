@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Recipe App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🍲 Recipe Manager</h1>
+    <input type="text" id="search" placeholder="Search by name or ingredient...">
+  </header>
+
+  <main>
+
+    <!-- Add Recipe -->
+    <section class="add-recipe">
+      <h2>Add Recipe</h2>
+      <input type="text" id="recipe-name" placeholder="Recipe Name">
+      <textarea id="ingredients" placeholder="Ingredients (comma separated)"></textarea>
+      <textarea id="steps" placeholder="Steps"></textarea>
+      <button id="add-btn">Add Recipe</button>
+    </section>
+
+    <!-- Recipes -->
+    <section class="recipes">
+      <h2>All Recipes</h2>
+      <div id="recipe-list" class="card-container">
+        
+        <!-- Recipe Cards -->
+
+      </div>
+    </section>
+
+    <!-- Favorites -->
+    <section class="favorites">
+      <h2>⭐ Favorites</h2>
+      <div id="fav-list" class="card-container">
+        <!-- Recipe Cards -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
