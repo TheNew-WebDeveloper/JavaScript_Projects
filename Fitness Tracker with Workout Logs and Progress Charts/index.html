@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🏋️ Fitness Tracker</h1>
+  </header>
+
+  <main class="container">
+
+    <!-- Workout Log Section -->
+    <section class="card">
+      <h2>Add Workout</h2>
+      <form id="workout-form">
+        <input type="text" placeholder="Workout Name" id="workout-name" required>
+        <input type="number" placeholder="Duration (mins)" id="workout-duration" required>
+        <input type="number" placeholder="Calories Burned" id="workout-calories" required>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <!-- Workout List -->
+    <section class="card">
+      <h2>Workout Logs</h2>
+      <ul id="workout-list"></ul>
+    </section>
+
+    <!-- Progress Chart -->
+    <section class="card">
+      <h2>Progress</h2>
+      <canvas id="progressChart"></canvas>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
