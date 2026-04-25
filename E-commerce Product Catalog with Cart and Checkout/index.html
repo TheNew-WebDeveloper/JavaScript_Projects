@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Commerce App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🛍️ My Store</h1>
+    <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+
+    <!-- Product List -->
+    <section id="products" class="products"></section>
+
+    <!-- Cart Sidebar -->
+    <aside id="cart" class="cart hidden">
+      <h2>Your Cart</h2>
+      <ol id="cart-items"></ol>
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button id="checkout-btn" class="checkout">Checkout</button>
+    </aside>
+
+  </main>
+
+  <!-- Checkout Modal -->
+  <div id="checkout-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Checkout</h2>
+      <input id="fullName" type="text" placeholder="Full Name">
+      <input id="address" type="text" placeholder="Address">
+      <input id="phone" type="text" placeholder="Phone">
+      <div id="error" class="hidden"><h4 style="color: red;" align="center">Enter Valid Details</h4></div>
+      <button id="place-order">Place Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
