@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashcards App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>📚 Language Flashcards</h1>
+    <p>Learn & Track Your Progress</p>
+  </header>
+
+  <!-- Progress Bar -->
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+  <p id="progress-text">0 / 0 Completed</p>
+
+  <!-- Flashcard Area -->
+  <div class="card-container">
+
+    <div class="flashcard" id="flashcard">
+      <div class="card-inner">
+
+        <div class="card-front">
+          <h2 id="question">Hola</h2>
+          <p>Tap to flip</p>
+        </div>
+
+        <div class="card-back">
+          <h3 id="answer">Hello</h3>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button id="wrong-btn">❌ Don't Know</button>
+    <button id="next-btn">➡ Next</button>
+    <button id="correct-btn">✔ I Know</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
