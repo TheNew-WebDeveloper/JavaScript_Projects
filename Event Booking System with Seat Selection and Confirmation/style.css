@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.event-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seat-container {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.screen {
+  text-align: center;
+  background: #334155;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Seat States */
+.available, .availableSign {
+  background: #22c55e;
+}
+
+.selected, .selectedSign {
+  background: #eab308;
+}
+
+.booked, .bookedSign {
+  background: #ef4444;
+}
+
+.selectedSign, .bookedSign, .availableSign {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.summary {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.confirm-btn {
+  background: #3b82f6;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.confirm-btn:hover {
+  background: #2563eb;
+}
+
+.hidden {
+  cursor: not-allowed;
+}
