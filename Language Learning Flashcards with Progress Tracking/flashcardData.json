@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "front": "What is JavaScript?",
+    "back": "A programming language used to create interactive web pages."
+  },
+  {
+    "id": 2,
+    "front": "What is a variable?",
+    "back": "A container used to store data values."
+  },
+  {
+    "id": 3,
+    "front": "Difference between let and var?",
+    "back": "let is block-scoped, var is function-scoped."
+  },
+  {
+    "id": 4,
+    "front": "What is const?",
+    "back": "A variable that cannot be reassigned after declaration."
+  },
+  {
+    "id": 5,
+    "front": "What are JavaScript data types?",
+    "back": "String, Number, Boolean, Null, Undefined, Object, Symbol, BigInt."
+  },
+  {
+    "id": 6,
+    "front": "What is a function?",
+    "back": "A reusable block of code that performs a task."
+  },
+  {
+    "id": 7,
+    "front": "What is an arrow function?",
+    "back": "A shorter syntax for writing functions using =>."
+  },
+  {
+    "id": 8,
+    "front": "What is an array?",
+    "back": "A structure used to store multiple values in a single variable."
+  },
+  {
+    "id": 9,
+    "front": "What is an object?",
+    "back": "A collection of key-value pairs."
+  },
+  {
+    "id": 10,
+    "front": "Difference between == and ===?",
+    "back": "=== checks value and type, == only checks value after type conversion."
+  },
+  {
+    "id": 11,
+    "front": "What is the DOM?",
+    "back": "Document Object Model, a structure representing HTML elements."
+  },
+  {
+    "id": 12,
+    "front": "What is an event?",
+    "back": "An action like click, input, or scroll detected by JavaScript."
+  },
+  {
+    "id": 13,
+    "front": "What does addEventListener do?",
+    "back": "Attaches an event handler to an element."
+  },
+  {
+    "id": 14,
+    "front": "What is a loop?",
+    "back": "A way to repeat code multiple times."
+  },
+  {
+    "id": 15,
+    "front": "What is a for loop?",
+    "back": "A loop used when the number of iterations is known."
+  },
+  {
+    "id": 16,
+    "front": "What is a while loop?",
+    "back": "A loop that runs as long as a condition is true."
+  },
+  {
+    "id": 17,
+    "front": "What is a Promise?",
+    "back": "An object representing the result of an asynchronous operation."
+  },
+  {
+    "id": 18,
+    "front": "What is async/await?",
+    "back": "A syntax to handle Promises in a cleaner, synchronous-looking way."
+  },
+  {
+    "id": 19,
+    "front": "What does console.log() do?",
+    "back": "Prints output to the browser console."
+  },
+  {
+    "id": 20,
+    "front": "What is NaN?",
+    "back": "A value that represents 'Not a Number'."
+  }
+]
