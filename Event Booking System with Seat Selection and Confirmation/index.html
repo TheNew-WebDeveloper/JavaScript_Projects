@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Event Info -->
+  <div class="event-info">
+    <h1>🎭 Live Concert</h1>
+    <p>Date: <span id="date"></span></p>
+    <p>Venue: Grand Arena</p>
+  </div>
+
+  <!-- Seat Layout -->
+  <div class="seat-container">
+    <h2>Select Your Seats</h2>
+
+    <div class="screen">STAGE</div>
+
+    <div class="seats">
+
+      <!-- Row A -->
+      <div class="row">
+        <div class="seat available" data-id="A1"></div>
+        <div class="seat available" data-id="A2"></div>
+        <div class="seat available" data-id="A3"></div>
+        <div class="seat available" data-id="A4"></div>
+      </div>
+
+      <!-- Row B -->
+      <div class="row">
+        <div class="seat available" data-id="B1"></div>
+        <div class="seat available" data-id="B2"></div>
+        <div class="seat available" data-id="B3"></div>
+        <div class="seat available" data-id="B4"></div>
+      </div>
+
+      <!-- Row C -->
+      <div class="row">
+        <div class="seat available" data-id="C1"></div>
+        <div class="seat available" data-id="C2"></div>
+        <div class="seat available" data-id="C3"></div>
+        <div class="seat available" data-id="C4"></div>
+      </div>
+
+    </div>
+
+    <!-- Legend -->
+    <div class="legend">
+      <span><div class="availableSign"></div> Available</span>
+      <span><div class="selectedSign"></div> Selected</span>
+      <span><div class="bookedSign"></div> Booked</span>
+    </div>
+
+  </div>
+
+  <!-- Booking Summary -->
+  <div class="summary">
+    <h2>Booking Summary</h2>
+    <p>Seats: <span id="selected-seats">None</span></p>
+    <p>Total: <span id="total">₹0</span></p>
+    <button class="confirm-btn">Confirm Booking</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
