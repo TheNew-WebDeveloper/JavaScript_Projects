@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flashcard Quiz Result</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #f0f4ff, #e0e7ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .card {
+        background: #fff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 350px;
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+      }
+
+      .score {
+        font-size: 40px;
+        margin: 20px 0;
+        color: #4caf50;
+      }
+
+      .details {
+        margin: 15px 0;
+        text-align: left;
+      }
+
+      .details p {
+        margin: 5px 0;
+      }
+
+      .progress-bar {
+        background: #ddd;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 20px;
+        margin-top: 15px;
+      }
+
+      .progress {
+        height: 100%;
+        background: #4caf50;
+        width: 0%;
+        transition: width 0.5s ease;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        background: #4caf50;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Quiz Complete 🎉</h1>
+      <div class="score" id="scoreText">7 / 10</div>
+
+      <div class="details">
+        <p>✅ Correct: <span id="correct">7</span></p>
+        <p>❌ Wrong: <span id="wrong">3</span></p>
+        <p>📊 Accuracy: <span id="accuracy">70%</span></p>
+      </div>
+
+      <div class="progress-bar">
+        <div class="progress" id="progressBar"></div>
+      </div>
+
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script>
+      const data = JSON.parse(localStorage.getItem("quizResult"));
+
+      document.querySelector("#scoreText").textContent =
+        `${data.correct} / ${data.total}`;
+      document.querySelector("#correct").textContent = data.correct;
+      document.querySelector("#wrong").textContent = data.wrong;
+      
+      const accuracy = (data.correct / data.total) * 100;
+      document.querySelector("#accuracy").textContent = `${accuracy}%`;
+      document.querySelector("#progressBar").style.width = `${accuracy}%`;
+      
+      function restartQuiz() {
+        window.location.href = "index.html";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
