@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Watchlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>🎬 Movie Watchlist</h1>
+    <p>Track movies, ratings & reviews</p>
+  </header>
+
+  <!-- Add Movie Form -->
+  <section class="form-container">
+    <input type="text" id="movieTitle" placeholder="Movie Title">
+    <input type="number" id="movieRating" placeholder="Rating (1-10)" min="1" max="10">
+    <textarea id="movieReview" placeholder="Write your review..."></textarea>
+    <button id="addBtn">Add Movie</button>
+  </section>
+
+  <!-- Movie List -->
+  <section class="movie-list" id="movieList">
+
+    <!-- Sample Card -->
+    <div class="movie-card">
+      <h2>Inception</h2>
+      <span class="rating">⭐ 9/10</span>
+      <p class="review">Amazing mind-bending thriller with great visuals.</p>
+      <div class="actions">
+        <button class="edit">Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
